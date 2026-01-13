@@ -13,4 +13,5 @@ public class ExecuteOperationCommand {
     private String operationKey;
     private String referenceId;
     private String description;
+    private java.util.Map<String, Object> parameters;
 }
