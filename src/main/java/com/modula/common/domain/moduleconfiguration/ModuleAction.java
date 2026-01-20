@@ -60,8 +60,9 @@ public class ModuleAction {
      */
     private String endpointUrl;
 
-    @Column(name = "handler_type", nullable = false)
-    private String handlerType;
+    @Column(name = "handler_type", nullable = false, updatable = false)
+    private String handlerType = "ACTION";
+
 
     /**
      * HTTP method used to call the action (e.g., GET, POST, PUT).

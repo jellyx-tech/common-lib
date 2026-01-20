@@ -5,6 +5,7 @@ import com.modula.common.domain.billing.OperationType;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -48,7 +49,9 @@ public class ModuleTrigger {
      */
     private String description;
 
-    private final String handlerType = "TRIGGER";
+    @Column(name = "handler_type", nullable = false, updatable = false)
+    private String handlerType = "TRIGGER";
+
     /**
      * Category used for grouping in the UI (e.g., "tasks", "notifications").
      */
@@ -104,4 +107,11 @@ public class ModuleTrigger {
     public void setPreviewConfigs(List<PreviewConfig> previewConfigs) {
         this.previewConfigs = previewConfigs;
     }
+
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
+
 }
