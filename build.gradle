@@ -125,7 +125,7 @@ publishing {
 			pom {
 				name = 'common-lib'
 				description = 'Common library with shared DTOs, utils, etc.'
-				url = 'https://github.com/ERP-Modula/common-lib'
+				url = 'https://github.com/jellyx-tech/common-lib'
 				licenses {
 					license {
 						name = 'Apache License 2.0'
@@ -133,9 +133,9 @@ publishing {
 					}
 				}
 				scm {
-					connection = 'scm:git:git://github.com/ERP-Modula/common-lib.git'
-					developerConnection = 'scm:git:ssh://github.com:ERP-Modula/common-lib.git'
-					url = 'https://github.com/ERP-Modula/common-lib'
+					connection = 'scm:git:git://github.com/jellyx-tech/common-lib.git'
+					developerConnection = 'scm:git:ssh://github.com:jellyx-tech/common-lib.git'
+					url = 'https://github.com/jellyx-tech/common-lib'
 				}
 			}
 		}
@@ -144,7 +144,7 @@ publishing {
 	repositories {
 		maven {
 			name = 'GitHubPackages'
-			url = uri("https://maven.pkg.github.com/ERP-Modula/common-lib")
+			url = uri("https://maven.pkg.github.com/jellyx-tech/common-lib")
 
 			credentials {
 				username = getGithubUser()
