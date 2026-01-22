@@ -14,7 +14,7 @@ gh auth refresh --scopes "read:packages" # только для подключе�
 ## Публикация новой версии common-lib:
 Изменить версию в `build.gradle`:
 ```gradle
-group = 'com.modula'
+group = 'com.jellyx'
 version = 'X.X.X' // например 1.0.0
 ```
 
@@ -75,7 +75,7 @@ def getGithubUser() {
 repositories {
 	mavenCentral()
 	maven {
-		url = uri("https://maven.pkg.github.com/ERP-Modula/common-lib")
+		url = uri("https://maven.pkg.github.com/jellyx-tech/common-lib")
 		credentials {
 			username = getGithubUser()
 			password = getGithubToken()
@@ -84,7 +84,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.modula:common-lib:1.0.0'
+	implementation 'com.jellyx:common-lib:1.0.0'
     // other libs
 }
 ```
