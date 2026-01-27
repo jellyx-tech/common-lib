@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.jellyx'
-version = '1.0.301'
+version = '1.0.302'
 
 java {
 	toolchain {
